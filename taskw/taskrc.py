@@ -100,9 +100,12 @@ class TaskRc(dict):
                 if line.startswith('include '):
                     try:
                         left, right = line.split(' ')
+                        included_file = right.strip()
+                        if included_file == "dark-256.theme":
+                            continue
                         config = self._merge_trees(
                             config,
-                            TaskRc(right.strip())
+                            TaskRc(included_file)
                         )
                     except ValueError:
                         logger.exception(
