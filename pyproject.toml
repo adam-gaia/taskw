@@ -12,13 +12,10 @@ kitchen = "^1.2.6"
 
 [tool.poetry.dev-dependencies]
 black = "^22.8.0"
-pytest = "^7.1.3"
-flake8 = "^5.0.4"
-pylint = "^2.15.2"
-mypy = "=0.961"
-
-[tool.poetry.scripts]
-taskw = 'todoist_taskwarrior.cli:cli'
+#pytest = "^7.1.3"
+#flake8 = "^5.0.4"
+#pylint = "^2.15.2"
+#mypy = "=0.961"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
