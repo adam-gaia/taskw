@@ -11,3 +11,7 @@ test.html
 .tox/*
 .vscode/*
 env/*
+
+# Nix relatead
+result/
+.direnv/
